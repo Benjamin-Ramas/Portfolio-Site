@@ -1,0 +1,51 @@
+@import 'colours';
+
+.main-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    background-color: #111111e7;
+    box-shadow: 2px 0px 5px #0000006a;
+    backdrop-filter: blur(5px);
+
+    h1{
+        font-size: 2em;
+        margin: auto 2rem;
+    }
+
+    ul{
+        button{
+            margin: auto 2rem;
+            margin-left: -1rem;
+            margin-right: 0;
+            font-weight: bold;
+            border: 3px solid $highligt-col;
+            border-radius: 5px;
+            background: none;
+            color: $highligt-col;
+            padding: 0.5rem 1rem;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: $highligt-col;
+            color: $background-col;
+            box-shadow: 0px 0px 3px $highligt-col;
+        }
+
+        margin: auto 2rem;
+        font-size: 1em;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        li{
+            margin: auto 1.5rem;
+        }
+    }
+}
